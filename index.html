@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safest Route Finder</title>
+    <!-- Link to the JavaScript file -->
+    <script src="script.js" defer></script>
+    <!-- Include the Google Maps JavaScript API with the correct API key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeSFPRdveLKclLmu6UD7sswtRfM76R6TA&libraries=places" defer></script>
+</head>
+<body>
+
+    <h1>Safest Route Finder</h1>
+
+    <!-- Create input fields for origin and destination -->
+    <label for="origin-input">Origin:</label>
+    <input type="text" id="origin-input" placeholder="Enter origin">
+
+    <label for="destination-input">Destination:</label>
+    <!-- Use an input field for the destination -->
+    <input type="text" id="destination-input" placeholder="Enter destination">
+
+    <!-- Create a button to trigger the route calculation -->
+    <button onclick="calculateRoute()">Find Safest Route</button>
+
+    <!-- Create a container for the map -->
+    <div id="map" style="height: 400px; width: 100%;"></div>
+
+</body>
+</html>
